@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <center>
+        <div class="balance">
+            <h2>TASK MANAGEMENT</h2>
+            <h4>Total Tasks: <span id="count">0</span></h4>
+        </div>
+        <div class="details">
+            <p>Completed: <span id="completed">0</span></p>
+            <p>Pending: <span id="pending">0</span></p>
+        </div>
+        <div class="base">
+            <table id="table">
+                <caption>Task Records</caption>
+                <thead>
+                    <tr>
+                        <th>Task Name</th>
+                        <th>Status</th>
+                        <th>Priority</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="input">
+            <h3> New Task:</h3>
+            <div>
+                <label>Status:</label>
+                <select id="status" class="input">
+                    <option value="">Select Status</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Pending">Pending</option>
+                </select>
+            </div>
+            <div>
+                <label>Task Name:</label>
+                <input id="name" type="text" placeholder="Enter task name" class="input">
+            </div>
+            <div>
+                <label>Priority:</label>
+                <input id="priority" type="text" placeholder="Enter priority" class="input">
+            </div>
+            <button onclick="getInput()" class="button type1">Add Task</button>
+        </div>
+    </center>
+</body>
+
+</html>
